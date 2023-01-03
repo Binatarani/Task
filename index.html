@@ -14,7 +14,29 @@
     <div id="div-text5"></div>
     <div id="div-text6"></div>
     <div id="div-text-one"></div>
-    <button onclick="displayDate()">This time is?</button>
+
+    <!-- Show and Hide Button -->
+
+    <div>
+      <h1 id="one">This is a Book!</h1>
+    </div>
+
+    <button style="padding: 10px" onClick="show()">Show</button>
+    <script>
+      function show() {
+        document.getElementById("one").innerHTML = "This is a Book! ";
+      }
+    </script>
+    <button style="padding: 10px" onClick="hide()">Hide</button>
+    <script>
+      function hide() {
+        document.getElementById("one").innerHTML = " ";
+      }
+    </script>
+    </br>
+    <!-- Time show -->
+
+    <button style="margin-top: 5px;border-radius: 5px;color: rgb(207, 69, 187);" onclick="displayDate()">This time is?</button>
     <script>
       function displayDate() {
         document.getElementById("demo").innerHTML = Date(2023);
